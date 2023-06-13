@@ -3,7 +3,7 @@
 
 ## About AITEMP Project
 QuickStayFinder :  
-This is for booking rooms. It has th
+This is for booking rooms. It has three user Adminstrator, Property Owner, and the customer.
 
 
 
