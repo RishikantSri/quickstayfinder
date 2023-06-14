@@ -14,12 +14,14 @@ class AuthTest extends TestCase
     public function test_registration_fails_with_admin_role()
     {
         $response = $this->postJson('/api/auth/register', [
-            'name' => 'Valid name',
-            'email' => 'valid@email.com',
-            'password' => 'ValidPassword',
-            'password_confirmation' => 'ValidPassword',
+            'name' => 'Admin',
+            'email' => 'admin@email.com',
+            'password' => 'password',
+            'password_confirmation' => 'password',
             'role_id' => Role::ROLE_ADMINISTRATOR
         ]);
+
+        // dd($response->json());
 
         $response->assertStatus(422);
     }
@@ -27,10 +29,10 @@ class AuthTest extends TestCase
     public function test_registration_succeeds_with_owner_role()
     {
         $response = $this->postJson('/api/auth/register', [
-            'name' => 'Valid name',
-            'email' => 'valid@email.com',
-            'password' => 'ValidPassword',
-            'password_confirmation' => 'ValidPassword',
+            'name' => 'Propert Owner 1 ',
+            'email' => 'pw1@email.com',
+            'password' => 'password',
+            'password_confirmation' => 'password',
             'role_id' => Role::ROLE_OWNER
         ]);
 
@@ -42,10 +44,10 @@ class AuthTest extends TestCase
     public function test_registration_succeeds_with_user_role()
     {
         $response = $this->postJson('/api/auth/register', [
-            'name' => 'Valid name',
-            'email' => 'valid@email.com',
-            'password' => 'ValidPassword',
-            'password_confirmation' => 'ValidPassword',
+            'name' => 'User 1',
+            'email' => 'user_1@email.com',
+            'password' => 'password',
+            'password_confirmation' => 'password',
             'role_id' => Role::ROLE_USER
         ]);
 

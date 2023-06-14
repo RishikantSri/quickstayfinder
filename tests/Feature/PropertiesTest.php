@@ -13,10 +13,7 @@ class PropertiesTest extends TestCase
     /**
      * A basic feature test example.
      */
-    use RefreshDatabase;
- 
-
-  
+    use RefreshDatabase;  
         
         public function test_property_owner_has_access_to_properties_feature()
         {

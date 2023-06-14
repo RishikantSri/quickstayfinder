@@ -15,6 +15,7 @@ class BookingsTest extends TestCase
     {
         $owner = User::factory()->create(['role_id' => Role::ROLE_USER]);
         $response = $this->actingAs($owner)->getJson('/api/user/bookings');
+        // dd($response->json());
  
         $response->assertStatus(200);
     }
@@ -23,6 +24,8 @@ class BookingsTest extends TestCase
     {
         $owner = User::factory()->create(['role_id' => Role::ROLE_OWNER]);
         $response = $this->actingAs($owner)->getJson('/api/user/bookings');
+
+        // dd($owner,$response->json());
  
         $response->assertStatus(403);
     }

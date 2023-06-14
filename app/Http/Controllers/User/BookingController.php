@@ -10,7 +10,8 @@ class BookingController extends Controller
     public function index()
     {
         $this->authorize('bookings-manage');
- 
+        
+        
         
         return response()->json(['success' => true]);
  
