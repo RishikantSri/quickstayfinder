@@ -5,8 +5,8 @@
 QuickStayFinder :  Laravel 10, Multi Auth Users, PHPUnit Test, TDD Apporach Development
 
 ****
-This rpoduc is for bookings. It has three user Adminstrator, Property Owner and the customer.
-Product is developing using TDD approach in which I am testing each feature after developing it, using PHPUnit Test.
+This product is for bookings. It has three users Adminstrator, Property Owner and the Customer.
+Product is being developed using TDD approach in which I am testing each feature after developing it, using PHPUnit Test.
 
 
 APIs End Poins 
