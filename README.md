@@ -46,6 +46,8 @@ APIs End Poins
 
 - **[QuickStayFinder: Property Mudule with seeder and PHPUnit Test done ](https://github.com/RishikantSri/quickstayfinder/commit/ad4469343ffb2e4724ce656e397ba899c9f8bf23)**
 
+- **[QuickStayFinder: Proerty Seacrh by country with PHPUNit Test Done ](https://github.com/RishikantSri/quickstayfinder/commit/3ee3e1f4f511d3642e12ef56180b56895a9151e2)**
+
 
 
 
